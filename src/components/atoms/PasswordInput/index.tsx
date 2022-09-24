@@ -1,11 +1,17 @@
-import React, { TextInput } from "react-native";
+import React, { TextInput, View } from "react-native";
 import loginStyles from "../../../../assets/styles/login.styles";
+import Eye from "../Eye";
 
-const EmailInput = () => (
-  <TextInput
-    style={loginStyles.formInputs}
-    placeholder="Enter your password"
-  ></TextInput>
+const PasswordInput = () => (
+  <>
+    <View>
+      <TextInput
+        style={loginStyles.formInputs}
+        placeholder="Enter your password"
+      ></TextInput>
+      <Eye />
+    </View>
+  </>
 );
 
-export default EmailInput;
+export default PasswordInput;
